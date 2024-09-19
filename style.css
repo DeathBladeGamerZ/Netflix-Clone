@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+.bodywrraper {
+  overflow-x: hidden;
+}
+
+.top {
+  height: 109vh;
+  background-image: url("asset/netflix\ bg.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0, 1),
+    rgb(0, 0, 0, 0.8),
+    rgb(0, 0, 0, 0.6),
+    rgb(0, 0, 0, 0.4),
+    rgb(0, 0, 0, 0.2),
+    rgb(0, 0, 0, 0)
+  );
+}
+
+.logo {
+  color: red;
+  height: 2.5rem;
+}
+
+.nav-content {
+  width: 65vw;
+  text-align: right;
+}
+
+select {
+  margin-right: 0.3125rem;
+  font-size: 1rem;
+  color: white;
+  padding: 0.375rem 1.5625rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.3125rem;
+}
+
+.signin {
+  font-weight: bold;
+  font-size: 0.875rem;
+  background-color: red;
+  padding: 0.375rem 1rem;
+  border-radius: 0.3125rem;
+}
+
+.subtitle {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.subtitle h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+#h12 {
+  margin-bottom: 1rem;
+}
+
+#p11 {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+#p12 {
+  font-size: 1rem;
+}
+
+label {
+  position: relative;
+  left: -22rem;
+  top: 0rem;
+  color: rgb(200, 200, 200);
+  z-index: 1;
+}
+
+.email {
+  margin-top: 0.9375rem;
+}
+
+input {
+  position: relative;
+  top: 0rem;
+  right: -2rem;
+  height: 6vh;
+  width: 26vw;
+  padding: 0.625rem 3.125rem 0.625rem 0;
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0.3125rem;
+
+  &:focus {
+    font-size: 1rem;
+
+    + label {
+      top: -1rem;
+      font-size: 0.75rem;
+    }
+  }
+}
+.button {
+  position: relative;
+  font-size: 1.5rem;
+  right: 3rem;
+  font-weight: 600;
+  background-color: red;
+  padding: 0.9375rem 1.875rem;
+  border-radius: 0.3125rem;
+}
+
+.curve {
+  position: absolute;
+  top: 99vh;
+  height: 20vh;
+  width: 130%;
+  left: -15%;
+  display: flex;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(33, 13, 22),
+    rgba(184, 40, 105),
+    rgba(229, 9, 20),
+    rgba(184, 40, 105),
+    rgba(33, 13, 22)
+  );
+}
+
+.curvedown {
+  border: solid 0.25rem transparent;
+  border-bottom: 0;
+  height: 20vh;
+  width: 130%;
+  left: -15%;
+  border-radius: inherit;
+  color: white;
+  background: radial-gradient(
+      50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    black;
+  background-clip: padding-box;
+}
+
+main {
+  padding: 4rem 9.25rem;
+  color: white;
+  background-color: black;
+}
+
+ul {
+  display: flex;
+  overflow-x: auto;
+}
+
+.trending {
+  margin: 1.25rem;
+  list-style: none;
+}
+
+.trending img {
+  border-radius: 0.5rem;
+}
+
+.trending :hover {
+  transition-delay: 0.1s;
+  transform: scale(1.05);
+  transition-timing-function: ease-in-out;
+}
+
+main h2 {
+  margin: 1rem 0;
+}
+
+.reason {
+  width: 100%;
+  margin-top: 0.75rem;
+  margin-left: 1rem;
+  list-style: none;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#rs1 {
+  margin-left: 0;
+}
+
+.rsdiv {
+  padding: 1.25rem 1rem 0rem 1rem;
+}
+
+.rsdiv h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.reason p {
+  margin: 0.5rem 0;
+}
+
+.reason img {
+  height: 4.5rem;
+  width: 4.5rem;
+  padding: 0.625rem;
+}
+
+.fqabtn {
+  border: none;
+  width: 100%;
+  text-align: start;
+  padding: 1.5rem;
+  color: white;
+  background-color: rgb(45, 45, 45);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
