@@ -3,8 +3,7 @@
   padding: 0;
 }
 
-html,
-.bodywrraper {
+html {
   overflow-x: hidden;
 }
 
@@ -35,7 +34,7 @@ html,
 
 .logo {
   color: red;
-  height: 2.5rem;
+  height: 40px;
 }
 
 .nav-content {
@@ -44,20 +43,20 @@ html,
 }
 
 select {
-  margin-right: 0.3125rem;
-  font-size: 1rem;
+  margin-right: 5px;
+  font-size: 16px;
   color: white;
-  padding: 0.375rem 1.5625rem;
+  padding: 6px 25px;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0.3125rem;
+  border-radius: 5px;
 }
 
 .signin {
   font-weight: bold;
-  font-size: 0.875rem;
+  font-size: 14px;
   background-color: red;
-  padding: 0.375rem 1rem;
-  border-radius: 0.3125rem;
+  padding: 6px 16px;
+  border-radius: 5px;
 }
 
 .subtitle {
@@ -70,64 +69,71 @@ select {
 }
 
 .subtitle h1 {
-  font-size: 3.5rem;
+  font-size: 56px;
   font-weight: 900;
 }
 
 #h12 {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 #p11 {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
+  font-size: 20px;
+  margin-bottom: 32px;
 }
 
 #p12 {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
-label {
-  position: relative;
-  left: -22rem;
-  top: 0rem;
-  color: rgb(200, 200, 200);
-  z-index: 1;
+.label {
+  position: absolute;
+	pointer-events: none;
+	top: 24px;
+	left: 10px;
+	transition: 0.2s ease all;
 }
 
 .email {
-  margin-top: 0.9375rem;
+  display: flex;
+  margin-top: 15px;
+  gap: 0.5rem;
+}
+.email-con{
+  position: relative;
+	width: 90%;
+
 }
 
 input {
-  position: relative;
-  top: 0rem;
-  right: -2rem;
-  height: 6vh;
-  width: 26vw;
-  padding: 0.625rem 3.125rem 0.625rem 0;
-  font-size: 1rem;
+  padding-top: 10px;
   color: white;
+  height: 55px;
+  width: 30vw;
+	outline: none;
+	border:none;
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 0.3125rem;
-
-  &:focus {
-    font-size: 1rem;
-
-    + label {
-      top: -1rem;
-      font-size: 0.75rem;
-    }
-  }
+	border-bottom: 1px solid #777;
+  border-radius: 5px;
+ 	box-shadow: none !important;
 }
+
+.email-con input:focus ~ .label,
+.email-con input:focus:valid ~ .label
+{
+	top: 5px;
+	left: 10px;
+	font-size: 13px;
+	opacity: 1;
+}
+
 .button {
-  position: relative;
-  font-size: 1.5rem;
-  right: 3rem;
+  font-size: 24px;
+  text-wrap:nowrap;
   font-weight: 600;
   background-color: red;
-  padding: 0.9375rem 1.875rem;
-  border-radius: 0.3125rem;
+  padding: 15px 30px;
+  border-radius: 5px;
 }
 
 .curve {
@@ -150,7 +156,7 @@ input {
 }
 
 .curvedown {
-  border: solid 0.25rem transparent;
+  border: solid 4px transparent;
   border-bottom: 0;
   height: 20vh;
   width: 130%;
@@ -167,7 +173,7 @@ input {
 }
 
 main {
-  padding: 4rem 9.25rem;
+  padding: 64px 148px;
   color: white;
   background-color: black;
 }
@@ -178,12 +184,12 @@ ul {
 }
 
 .trending {
-  margin: 1.25rem;
+  margin: 20px;
   list-style: none;
 }
 
 .trending img {
-  border-radius: 0.5rem;
+  border-radius: 8px;
 }
 
 .trending :hover {
@@ -193,16 +199,16 @@ ul {
 }
 
 main h2 {
-  margin: 1rem 0;
+  margin: 16px 0;
 }
 
 .reason {
   width: 100%;
-  margin-top: 0.75rem;
-  margin-left: 1rem;
+  margin-top: 12px;
+  margin-left: 16px;
   list-style: none;
   background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
-  border-radius: 1rem;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -214,35 +220,80 @@ main h2 {
 }
 
 .rsdiv {
-  padding: 1.25rem 1rem 0rem 1rem;
+  padding: 20px 16px 0px 16px;
 }
 
 .rsdiv h3 {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .reason p {
-  margin: 0.5rem 0;
+  margin: 8px 0;
 }
 
 .reason img {
-  height: 4.5rem;
-  width: 4.5rem;
-  padding: 0.625rem;
+  height: 72px;
+  width: 72px;
+  padding: 10px;
 }
 
 .fqabtn {
   border: none;
   width: 100%;
   text-align: start;
-  padding: 1.5rem;
+  padding: 24px;
   color: white;
   background-color: rgb(45, 45, 45);
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-size: 24px;
   font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.foot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 783px;
+  margin: 1.5rem 92.1664px;
+  margin-bottom: 64px;
+}
+.foot input{
+  background-color: rgba(15, 15, 15);
+  position: static;
+  width: 100%;
+  
+}
+.foot a {
+ position: static;
+}
+.my64{
+  margin-bottom: 64px;
+}
+#queshead {
+  margin: 36px 0px;
+}
+.ques {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.ques a {
+  color: rgb(179, 179, 179);
+  font-size: 14px;
+  margin-top: 12px;
+  flex: 0 0 25%;
+}
+#p13{
+  text-align: center;
+}
+#p14{
+  font-size:14px ;
+}
+.footsl{
+  margin: 6vh;
+  margin-left: 0rem;
 }
